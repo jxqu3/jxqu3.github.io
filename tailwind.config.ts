@@ -8,7 +8,5 @@ export default {
 		}
 	},
 
-	darkMode: 'selector',
-
 	plugins: [require('@tailwindcss/typography')]
 } as Config;
