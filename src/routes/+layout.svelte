@@ -50,11 +50,6 @@
 		position: relative;
 	}
 
-	:global(.home svg) {
-		width: 100% !important;
-		height: 100%;
-	}
-
 	:global(.window-icon img) {
 		width: 2rem !important;
 		height: 1rem !important;
