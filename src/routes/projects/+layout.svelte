@@ -11,9 +11,9 @@
     </div>
     <div class="body">
         <li class="folders">
-            <ul><Icon icon="folder" class="list-folder"/><a href="/projects" style="flex">Projects</a></ul>
+            <ul><a href="/projects" class="flex flex-row items-center p-2 gap-2 w-full"><Icon icon="folder" class="list-folder"/>Projects</a></ul>
         </li>
-        <div class="files flex">
+        <div class="files flex flex-wrap">
             <slot />
         </div>
     </div>
@@ -25,7 +25,6 @@
     }
 
     ul {
-        @apply p-2;
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -72,7 +71,11 @@
     }
 
     :global(.file) {
-        @apply flex items-center w-24 h-28 flex-col p-2 m-4 transition-all;
+        @apply flex items-center w-32 h-36 flex-col p-2 m-1 transition-all text-center;
+    }
+
+    :global(.file svg, .file img) {
+        @apply w-20 h-20;
     }
 
     :global(.file .name) {

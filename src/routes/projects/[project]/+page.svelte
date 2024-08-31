@@ -39,10 +39,16 @@
 {/if}
 
 {#if project}
-<a class="file" href="{project.github}">
+<a class="file" href="{project.github}" target="_blank">
     <Icon icon="shortcut"/>
     <span class="name">{project.name} GitHub</span>
 </a>
+{#if project.website}
+<a class="file" href="{project.website}" target="_blank">
+    <Icon icon="shortcut"/>
+    <span class="name">{project.name} Web</span>
+</a>
+{/if}
 <button class="file" onclick={() => open = true}>
     <Icon icon="file"/>
     <span class="name">About.txt</span>
