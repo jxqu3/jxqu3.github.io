@@ -64,12 +64,6 @@
         grid-template-columns: 1fr 5fr;
     }
 
-    .explorer input {
-        @apply outline-none;
-        width: 100%;
-        height: 100%;
-    }
-
     :global(.file) {
         @apply flex items-center w-32 h-36 flex-col p-2 m-1 transition-all text-center;
     }

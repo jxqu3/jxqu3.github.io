@@ -69,10 +69,6 @@
 		@apply text-white text-3xl w-14 h-10  hover:bg-neutral-700 flex items-center justify-center;
 	}
 
-	.selected {
-		@apply bg-neutral-700;
-	}
-
 	.folder {
 		@apply text-3xl w-24 p-2 m-4 h-28 flex items-center justify-center flex-col;
 		filter: drop-shadow(0 2px .05rem #4046);
