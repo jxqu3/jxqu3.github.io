@@ -6,7 +6,6 @@
 	import Icon from '$lib/Icon.svelte';
 
 	let { children } = $props();
-	export const prerender = true;
 </script>
 
 <main class="w-screen h-screen overflow-hidden flex items-center justify-center wallpaper">
@@ -56,13 +55,9 @@
 		height: 100%;
 	}
 
-	:global(.window-icon svg) {
+	:global(.window-icon img) {
 		width: 2rem !important;
 		height: 1rem !important;
-	}
-
-	:global(.window-icon rect) {
-		@apply fill-white;
 	}
 
 	:global(.window-icon) {
